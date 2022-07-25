@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>todo list</title>
-  </head>
-  <body>
-    <h1>it's a <%= kindOfDay%> !</h1>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>todo list</title>
+</head>
+
+<body>
+  <h1><%= kindOfDay%></h1>
+  <ul>
+    <%for (var i = 0; i < newListItems.length; i++) {%>
+
+      <li><%=newListItems[i]%></li>
+    <%}%>
+
+  </ul>
+
+  <form class="" action="/" method="post">
+    <input class="" type="text" name="newItem" >
+    <button type="submit" name="addItem">Add</button>
+
+
+  </form>
+</body>
+
 </html>
